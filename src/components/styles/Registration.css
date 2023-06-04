@@ -1,0 +1,243 @@
+.reg{
+    background-color: #16171B;
+    height:120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.lr{
+    flex: 1;
+}
+.reg .form .i1{
+    margin-top: 20px;
+}
+.reg .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reg .form input,.reg .form textarea{
+    max-width: 500px;
+    border-radius: 13px;
+    border: none;
+    transition: all 0.2s ease-in;
+}
+.reg .form textarea{
+    height: 200px;
+}
+.form textarea::placeholder{
+    color: red;
+    opacity: 80%;
+    max-width: 80%;
+}
+.pay-alerts{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    max-width: 500px;
+}
+.reg .form .i-sub{
+    max-width: 180px;
+    border-radius: 20px;
+    background-color: #8C2725;
+    border: none;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    font-size: 18px;
+    padding: 0;
+    transition: all 0.2s ease-in;
+}
+.reg .form .i-sub:hover{
+    background-color: white;
+    color: #8C2725;
+    border: 1px solid #8C2725;
+    outline: none;
+}
+.err{
+    color: white;
+    background-color: rgba(140, 39, 37,0.7);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.pay-alerts{
+    background-color: rgba(140, 39, 37,0.5);
+    padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+.reg h1{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    max-width: 500px;
+    margin-top: 120px;
+}
+.reg h1 strong{
+    color: #8C2725;
+}
+.lr{
+    display: flex;
+}
+.lr form{
+    flex: 1;
+}
+
+.lr .teamGet{
+    margin-top: 150px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #8C2725;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-bottom: 120px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.lr hr{
+    height: 60%;
+    margin-top: 180px;  
+    border: 1px solid #8C2725;
+    width: 0.5px;
+}
+.teamGet h3{
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.teamGet .add{
+    background-color: #8C2725;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.team-in{
+    display: flex;
+    gap: 10px;
+}
+.team-in input{
+    border-radius: 20px;
+    height: 30px;
+    outline: none;
+    padding-left: 20px;
+    width: 300px;
+    border: 2px solid #8C2725;
+}
+.team-in button{
+    width: 35px;
+    background-color: #8C2725;
+    border: none;
+    color: white;
+    height:35px;
+    border-radius: 50%;
+}
+.err-msg{
+    color: white;
+    background-color: rgba(140, 39, 37,0.5);
+    border-radius: 20px;
+    padding: 10px;
+}
+.tandc{
+    display: flex;
+    justify-content: space-between;
+}
+.tandc{
+    border: none;
+    outline: none;
+}
+.tandc .tccheck{
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+.note{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.bank-error{
+    width: "500px";
+    color: white;
+    background-color: red;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    text-align: center;
+}
+@media screen and (max-width:720px) {
+    .reg{
+        min-height: 270vh;
+    }
+    .bank-error{
+        max-width: 300px;
+    }
+    .reg .form input,.reg .form textarea{
+        max-width: 290px;
+    }
+    .reg .form textarea{
+        height: 150px;
+    }
+    .lr{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form .i-sub{
+        position: fixed;
+        bottom: 0;
+    }
+    .lr .teamGet{
+        width: 100vw;
+        margin:0;
+        max-height: fit-content;
+        border-radius:0 ;
+        margin-top: 0px;
+        border: none;
+        border-radius: 20px;
+        border-bottom: none;
+        margin-bottom: 20px;
+    }
+    .teamGet p{
+        max-width: 290px;
+    }
+    .teamGet input{
+        max-width: 200px;
+    }
+    .pay-alerts{
+        max-width: 320px;
+        padding: 20px;
+        padding-left: 30px;
+        font-weight: 500;
+        border-radius: 20px;
+        color: white;
+        margin:20px;
+        margin-bottom: 30px;
+        background-color: rgba(140, 39, 37,0.5);
+    }
+    .err{
+        max-width: 290px;
+    }
+    .reg h1{
+        width: 300px;
+        margin-top: 140px;
+    }
+
+}

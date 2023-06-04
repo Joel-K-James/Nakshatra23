@@ -1,0 +1,122 @@
+.cultural-events-main{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/nk23-a5689.appspot.com/o/Main.png?alt=media&token=dbb94f93-83ed-46fb-83eb-fd1ad698eed7");
+    height: 100vh;
+}
+.cultural-events-sub{
+    background-color: #16171B;
+    position: fixed;
+    width: 75vw;
+    height: 75vh;
+    border-radius: 30px;
+    right: 50px;
+    top: 17%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cultural-event-card{
+    margin: 12px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+}
+.cultural-event-card:hover{
+    transform: scale(1.03);
+}
+.cultural-event-card-2{
+    grid-column: span 1;
+    margin: 20px;
+    transition: all 0.2s ease-in;
+    border-radius: 20px;
+}
+.cultural-event-card-2:hover{
+    transform: scale(1.03);
+}
+
+.cultural-event-card-2 button{
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+}
+.cultural-event-card button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.cultural-events-sub button img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.cultural-event-card-2 button img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vector-cultural{
+    width: 20vw;
+    height: 94vh;
+    margin-top: 80px;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/nk23-a5689.appspot.com/o/3.png?alt=media&token=654afab1-cebf-447b-8e02-77970a3bf32f");
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in;
+    position: fixed;
+}
+.vector-cultural:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:720px) {
+    .vector-cultural{
+        display: none;
+    }
+    .cultural-events-main{
+        width: 100vw;
+    }
+
+    .cultural-events-sub{
+        width: 95vw;
+        position: absolute;
+        left: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+    }
+    .cultural-events-sub button{
+        width: 350px;
+        display: flex;
+        font-size: 35px;
+        font-weight: 500;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in;
+    }
+    .cultural-events-sub button img{
+        min-height: 250px;
+    }
+
+    .cultural-events-sub::-webkit-scrollbar{
+        display: none;
+    }
+    .cultural-event-card,.cultural-event-card-2{
+        min-height: 30vh;
+        width: 90;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0,0.8);
+    }
+    
+}
+@media screen and (min-width:900px) and (max-width:1200px){
+    .cultural-event-card-2 button{
+        font-size: 25px;
+    }
+    .cultural-event-card button{
+        width: 100%;
+    }
+}
